@@ -2,7 +2,6 @@ var autonomy = exports;
 var ardrone = require('ar-drone');
 
 exports.EKF = require('./lib/EKF');
-exports.Camera = require('./lib/Camera');
 exports.Controller = require('./lib/Controller');
 exports.Mission = require('./lib/Mission');
 
@@ -17,4 +16,3 @@ exports.createMission = function(options, client) {
 
     return mission;
 }
-

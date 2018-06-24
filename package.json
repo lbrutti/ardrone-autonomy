@@ -12,7 +12,6 @@
     "nodecopter",
     "parrot",
     "autonomous",
-    "kalman",
     "pid"
   ],
   "scripts": {
@@ -23,9 +22,7 @@
     "async": "0.2.9",
     "bindings": "^1.3.0",
     "dateformat": "^3.0.3",
-    "lapack": "^0.1.0",
-    "node-serial": "^0.1.1",
-    "sylvester": "0.0.21"
+    "node-serial": "^0.1.1"
   },
   "devDependencies": {
     "utest": "0.0.6",
