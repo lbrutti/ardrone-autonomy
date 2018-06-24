@@ -1,9 +1,9 @@
 var fs = require('fs');
 var path = require('path');
-var df = require('dateformat')
-  , arDrone = require('ar-drone')
-  , arDroneConstants = require('ar-drone/lib/constants')
-  , autonomy = require('..');
+var df = require('dateformat');
+var arDrone = require('ar-drone');
+var arDroneConstants = require('ar-drone/lib/constants');
+var autonomy = require('..');
 
 var client  = arDrone.createClient();
 var ctrl    = new autonomy.Controller(client, {debug: false});
@@ -61,5 +61,3 @@ ctrl.on('controlData', function(d) {
                     d.last_ok + "," +
                     d.tag + "\n");
 });
-
-

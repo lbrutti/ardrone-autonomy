@@ -7,12 +7,12 @@ exports.Mission = require('./lib/Mission');
 
 exports.control = function(client, options) {
     return new autonomy.Controller(client, options);
-}
+};
 
 exports.createMission = function(options, client) {
-    var client  = client || ardrone.createClient(options);
+    var client  = client ? client : ardrone.createClient(options);
     var control = new autonomy.Controller(client, options);
     var mission = new autonomy.Mission(client, control, options);
 
     return mission;
-}
+};
